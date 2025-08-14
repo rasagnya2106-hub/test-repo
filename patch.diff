@@ -1,0 +1,15 @@
+--- /tmp/output/2_1/application/Fibonacci-master/fibonacci_module.py
+13 -        return num
+18 -        raise ValueError(num, ' is not positive.')
+19 -        raise ValueError(f"{num} is not positive.")
+45 -        raise ValueError('Invalid input. ', num, ' should be a positive integer.')
+45 +        raise ValueError(f"Invalid input. {num} should be a positive integer.")
+186 -            return -1
+193 -        msg = str(nth) + " exceeds the number of saved Fibonacci numbers (" + str(size) + ")."
+193 +        msg = f"{nth} exceeds the number of saved Fibonacci numbers ({size})."
+194 -        return -1
+223 -        return -1
+225 -        return -1
+226 -    if input > right_fib:
+227 -        raise ValueError(input,"exceeds highest saved Fibonacci number.  \nEither choose a lower number to round, or regenerate the file containing the saved Fibonacci numbers (", filename,") with more values.")
+227 +        raise ValueError(f"{input} exceeds highest saved Fibonacci number. Either choose a lower number to round, or regenerate the file containing the saved Fibonacci numbers ({filename}) with more values.")
